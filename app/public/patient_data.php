@@ -5,7 +5,7 @@
     "firstName":"Tanya",
     "lastName":"Gupta",
     "dob":"1997-07-03",
-    "sexAtBirth":"F"
+    "sexAtBirth":"F",
     "priority":"high"
   },
 
@@ -14,7 +14,7 @@
     "firstName":"Tony",
     "lastName":"Stark",
     "dob":"1970-12-09",
-    "sexAtBirth":"M"
+    "sexAtBirth":"M",
     "priority":"medium"
   },
 
@@ -23,7 +23,7 @@
     "firstName":"Natasha",
     "lastName":"Romanoff",
     "dob":"1982-11-01",
-    "sexAtBirth":"F"
+    "sexAtBirth":"F",
     "priority":"low"
   },
 
