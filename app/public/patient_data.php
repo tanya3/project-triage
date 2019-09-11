@@ -6,6 +6,7 @@
     "lastName":"Gupta",
     "dob":"1997-07-03",
     "sexAtBirth":"F"
+    "priority":"high"
   },
 
   {
@@ -14,6 +15,7 @@
     "lastName":"Stark",
     "dob":"1970-12-09",
     "sexAtBirth":"M"
+    "priority":"medium"
   },
 
   {
@@ -22,6 +24,7 @@
     "lastName":"Romanoff",
     "dob":"1982-11-01",
     "sexAtBirth":"F"
+    "priority":"low"
   },
 
 ]
