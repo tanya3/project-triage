@@ -29,5 +29,17 @@ data: {
         "priority":"low"
       },
   ]
+},
+methods: {
+  fetchPatients() {
+    fetch('https://randomuser.me/api/')
+    .then(response => response.json())          //creating a separate function that calls reponse.json() and stores it in json
+    .then( json => {waitingApp.people=json});   //creating another function
+
+
+    // fetch('https://randomuser.me/api/')
+    // .then(function(response) {return response.json()})          //creating a separate function that calls reponse.json() and stores it in json
+    // .then(function(json) {waitingApp.people=json});
+  }
 }
-})
+});
