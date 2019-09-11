@@ -1,6 +1,12 @@
-var app = new Vue({
+var waitingApp = new Vue({
 el: '#patientWaitingApp',
 data: {
+    person:{
+      name:{
+        first:'',
+        last:''
+      }
+    },
     patients: [
       {
         "patientGuid":"P00001",
@@ -33,13 +39,17 @@ data: {
 methods: {
   fetchPatients() {
     fetch('https://randomuser.me/api/')
-    .then(response => response.json())          //creating a separate function that calls reponse.json() and stores it in json
-    .then( json => {waitingApp.people=json});   //creating another function
+    .then(response => response.json())          //creating a separate function that calls reponse.json() and stores it in json. Converts from json into a parsed javascript object
+    .then( json => {waitingApp.person=json.results[0]});   //creating another function
 
 
     // fetch('https://randomuser.me/api/')
-    // .then(function(response) {return response.json()})          //creating a separate function that calls reponse.json() and stores it in json
+    // .then(function(response) {return response.json()})          //creating a separate anonymous function that returns reponse.json() and stores it in json. function(response) is an anonymous function with parameter response (returned from api) and returns it as a json() object to next function
     // .then(function(json) {waitingApp.people=json});
+    }
+  },
+
+  created() {                                    //called automatically when new application is created
+    this.fetchPatients();
   }
-}
 });
