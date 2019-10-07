@@ -14,7 +14,8 @@ var patientTriageApp = new Vue({
            "Content-Type": "application/json; charset=utf-8"
          }
         })
-       .then( ... )
+       .then(response => response.json() )
+       .then()
 
        //waitingApp.patients.push(this.patient);
        this.handleReset();
