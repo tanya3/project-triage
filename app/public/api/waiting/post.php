@@ -1,7 +1,9 @@
 <?php
 
+// Step 0: Validate data
+
 // Step 1: Get a datase connection from our help class
-$db = DbConnection::getConnection();      //:: indicates that its a static function
+$db = DbConnection::getConnection();
 
 // Step 2: Prepare & run the query
 $stmt = $db->prepare(
