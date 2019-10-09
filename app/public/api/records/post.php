@@ -1,5 +1,6 @@
 <?php
 use Ramsey\Uuid\Uuid;
+// Step 0: Validate data
 
 // Step 1: Get a datase connection from our help class
 $db = DbConnection::getConnection();      //:: indicates that its a static function
