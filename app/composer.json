@@ -5,7 +5,9 @@
     "authors": [{
         "name": "Tom Gregory"
     }],
-    "require": {},
+    "require": {
+      "ramsey/uuid":"^3.8"  //our code depends on ramsey's uuid code
+    },
     "autoload": {
         "classmap": ["class/DbConnection.php"]
     }
