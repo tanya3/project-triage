@@ -15,7 +15,6 @@ var waitingApp = new Vue({
     formatVisitDateLocal(d) {
       return moment.utc(d).local().format("HH:mm MMM Do");
 =======
-=======
 >>>>>>> pr/6
     formatVisitDateLocal(d) {
       return moment.utc(d).local().format("HH:mm MMM Do");

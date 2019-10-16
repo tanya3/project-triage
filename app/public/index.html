@@ -156,8 +156,7 @@
         :class="patient.priority + 'Priority'"
         v-for="patient in patients">
           {{ formatVisitDateLocal(patient.visitDateUtc) }}<br>
-<<<<<<< HEAD
-<<<<<<< HEAD
+          <small>{{ visitDateSince(patient.visitDateUtc) }}</small><br>
 =======
           <small>{{ visitDateSince(patient.visitDateUtc) }}</small><br>
 >>>>>>> pr/6
