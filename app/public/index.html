@@ -157,12 +157,6 @@
         v-for="patient in patients">
           {{ formatVisitDateLocal(patient.visitDateUtc) }}<br>
           <small>{{ visitDateSince(patient.visitDateUtc) }}</small><br>
-=======
-          <small>{{ visitDateSince(patient.visitDateUtc) }}</small><br>
->>>>>>> pr/6
-=======
-          <small>{{ visitDateSince(patient.visitDateUtc) }}</small><br>
->>>>>>> pr/6
           <span class="patientName">{{ patient.lastName }}</span>,
           <span class="patientName">{{ patient.firstName }}</span><br>
           {{ patient.sexAtBirth }} {{ patient.dob }}
